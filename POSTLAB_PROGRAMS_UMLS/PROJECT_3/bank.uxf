@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>594</x>
+      <y>55</y>
+      <w>253</w>
+      <h>341</h>
+    </coordinates>
+    <panel_attributes>Bank
+--
+-accounts: string
+-fileName: NoneType
+-add: string
+-makeKey: string
+--
++Bank():
++Bank(NoneType): 
++makeKey(string,string): string
++add(SavingsAccount): void
++remove(string,string): string
++get(string,string): string
++computeInterest(): int
++getKeys(): 
++save(NoneType): 
++createBank(int): Bank
++testAccount(): 
++main(int,Nonetype): 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>583</x>
+      <y>451</y>
+      <w>297</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>SavingsAccount
+--
+-name: string
+-pin: string
+-balance: float
+-deposit: NoneType
+--
++SavingsAccount():
++SavingsAccount(string,string,float): 
++getBalance(): float
++getName(): string
++getPin(): string
++deposit(int): NoneType
++withdraw(int): NoneType
++computeInterest(): float
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>715</x>
+      <y>385</y>
+      <w>33</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+*</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
